@@ -11,7 +11,7 @@
 
 <body>
 
-    <form class="form" id="myForm">
+    <form class="pokemonForm" id="myForm">
         <h2>hackémon</h2>
         <label class="form__label" for="name">Pokémon Name:</label>
         <input class="form__criteria" type="text" id="name" name="name" required />
@@ -21,10 +21,15 @@
             <option value="water">Water</option>
             <option value="grass">Grass</option>
         </select>
-
-        <input type="hidden" name="source" value="tutorial" />
-
+        <button type="submit">SUBMIT</button>
+        <input type="hidden" name="source" value="tutorial"/>
     </form>
+
+    <div class="pokemon-container">
+        <ul class="pokemon-info__list">
+            
+        </ul>
+    </div>
 
     <script src=“https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js”></script>
     <script src="./scripts/script.js" type="text/javascript"></script>
