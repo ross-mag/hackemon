@@ -1,7 +1,9 @@
 @use './partials/mixins' as *;
 
-* {
-    margin: 1rem;
-    padding: 0;
+.title {
+    padding-bottom: 5rem;
 }
 
+.form__label {
+    display: flex;
+}
