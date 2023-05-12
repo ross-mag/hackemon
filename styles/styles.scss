@@ -1,1 +1,7 @@
 @use './partials/mixins' as *;
+
+* {
+    margin: 1rem;
+    padding: 0;
+}
+

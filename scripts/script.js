@@ -44,11 +44,14 @@ function displayPokemon(event, pokemonData) {
 
     const abilities = document.createElement("li");
     abilities.innerHTML = `<label>Abilities:</label> ${pokemonData.abilities
-        .map((ability) => ability.ability.name)}`;
+        .map((ability) => ability.ability.name)
+        .join(', ')}`;
 
     const moves = document.createElement("li");
     moves.innerHTML = `<label>Moves:</label> ${pokemonData.moves
-        .map((move) => move.move.name)}`;
+        .map((move) => move.move.name)
+        .slice(0,5)
+        .join(', ')}`;
 
     pokemonInfoList.appendChild(id);
     pokemonInfoList.appendChild(name);
