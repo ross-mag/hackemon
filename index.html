@@ -6,15 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
-    <title>giphify</title>
+    <title>hackémon</title>
 </head>
 
 <body>
 
+    <form class="form" id="myForm">
+        <h2>hackémon</h2>
+        <label class="form__label" for="name">Pokémon Name:</label>
+        <input class="form__criteria" type="text" id="name" name="name" required />
+        <label class="form__label" for="starter-type">Pick Starter Type</label>
+        <select class="form__criteria" id="starter-type" name="starter-type">
+            <option value="fire">Fire</option>
+            <option value="water">Water</option>
+            <option value="grass">Grass</option>
+        </select>
 
+        <input type="hidden" name="source" value="tutorial" />
 
+    </form>
 
-    
+    <script src=“https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js”></script>
     <script src="./scripts/script.js" type="text/javascript"></script>
 </body>
 
