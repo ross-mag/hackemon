@@ -11,11 +11,14 @@
 
 <body>
 
+    <!-- header -->
+    <header class="header__container">
+        <img src="https://fontmeme.com/permalink/230512/a73754d787651a3dbe0bd4fb22c36b65.png" alt="pokemon-font"
+            border="0">
+    </header>
+
     <!-- form -->
     <form class="pokemonForm" id="pokemonForm">
-        <a class="title" href="https://fontmeme.com/pokemon-font/"><img
-                src="https://fontmeme.com/permalink/230512/a73754d787651a3dbe0bd4fb22c36b65.png" alt="pokemon-font"
-                border="0"></a>
         <label class="form__label" for="name">Pokémon Name:</label>
         <input class="form__criteria" type="text" id="name" name="name" required />
         <button id="submit" type="submit">SUBMIT</button>
@@ -25,10 +28,9 @@
     <!-- info-list -->
     <div class="pokemon-container">
         <ul class="pokemon-info__list">
-
         </ul>
     </div>
-
+    </header>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="./scripts/script.js"></script>
